@@ -1,0 +1,63 @@
+/* Ensure parent container does not shift layout */
+.wp-block-navigation__container .wp-block-navigation-item.has-child {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+/* Position dropdown submenu absolutely under heading, moved left by 6px */
+.wp-block-navigation__container .wp-block-navigation-item.has-child .wp-block-navigation-submenu {
+    background-color: #f0f0f0 !important;
+    width: 120px !important;
+    min-width: unset !important;
+    max-width: unset !important;
+    border-radius: 4px;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    position: absolute;
+    top: 100%;
+    left: -6px !important;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    z-index: 999;
+    pointer-events: auto; /* make sure pseudo element receives hover */
+}
+
+/* Add invisible hover buffer above the dropdown */
+.wp-block-navigation__container .wp-block-navigation-item.has-child .wp-block-navigation-submenu::before {
+    content: "";
+    position: absolute;
+    top: -10px;      /* 10px above dropdown */
+    left: 0;
+    right: 0;
+    height: 10px;    /* buffer height */
+    background: transparent;
+    pointer-events: auto; /* allow hover */
+}
+
+/* Show submenu on hover */
+.wp-block-navigation__container .wp-block-navigation-item.has-child:hover .wp-block-navigation-submenu,
+.wp-block-navigation__container .wp-block-navigation-item.has-child .wp-block-navigation-submenu:hover {
+    display: block;
+    opacity: 1;
+}
+
+/* Dropdown items style */
+.wp-block-navigation__container .wp-block-navigation-item.has-child .wp-block-navigation-submenu .wp-block-navigation-item__content {
+    color: #4480b9;
+    padding: 8px 0 8px 0; /* remove left/right padding */
+    display: block;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Hover effect */
+.wp-block-navigation__container .wp-block-navigation-item.has-child .wp-block-navigation-submenu .wp-block-navigation-item__content:hover {
+    background-color: #d6e4fa;
+    color: #2a5a8a;
+}
