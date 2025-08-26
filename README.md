@@ -9,9 +9,9 @@ Custom WordPress code snippets for BBCDP site improvements.
 CSS snippets added directly through WordPress Customizer:
   - facebook-video.css
   - video-image-spacing.css
+
 ---
-* * *
-___
+
 ### 2. WPCode Plugin
   - navbar-button-style.css  
   - navbar-dropdown-style.css
