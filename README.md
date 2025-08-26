@@ -11,6 +11,7 @@ CSS snippets added directly through WordPress Customizer:
   - video-image-spacing.css
 ---
 * * *
+___
 ### 2. WPCode Plugin
   - navbar-button-style.css  
   - navbar-dropdown-style.css
