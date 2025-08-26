@@ -1,0 +1,23 @@
+/*
+  Embedded Facebook Video
+  Page Title: New Sauna Opens at the Bungalow Wellness Sanctuary
+  WordPress Page URL (admin view): https://bluebellcdp.ie/wp-admin/post.php?post=1029&action=edit
+  Issue: 0001
+*/
+
+.responsive-video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.responsive-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    border: none !important;
+}
