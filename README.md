@@ -17,5 +17,6 @@ CSS snippets added directly through WordPress Customizer:
 ### 3. Block Editor (Gutenberg)
   - navbar-button.html
 ---
-### WordPress
+### 4. WordPress
   - facebook-video.html (page_id 1029)
+---
