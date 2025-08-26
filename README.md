@@ -10,6 +10,7 @@ CSS snippets added directly through WordPress Customizer:
   - facebook-video.css
   - video-image-spacing.css
 ---
+* * *
 ### 2. WPCode Plugin
   - navbar-button-style.css  
   - navbar-dropdown-style.css
