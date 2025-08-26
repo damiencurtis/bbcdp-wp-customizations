@@ -5,39 +5,84 @@
     <title>BBCDP WP Customizations</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-        }
-        h1 {
-            color: #333;
-        }
-        ul {
-            list-style-type: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom right, #f4f4f9, #e0e7ff);
+            margin: 0;
             padding: 0;
         }
-        li {
-            margin: 10px 0;
+        header {
+            background-color: #4f46e5;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-        a {
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        p {
+            font-size: 1.1em;
+            color: #333;
+            text-align: center;
+        }
+        .file-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .file-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-align: center;
+        }
+        .file-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+        .file-card a {
             text-decoration: none;
-            color: #007bff;
-        }
-        a:hover {
-            text-decoration: underline;
+            color: #4f46e5;
+            font-weight: bold;
+            display: block;
+            font-size: 1.1em;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>BBCDP WP Customizations</h1>
-    <p>Welcome! Here are the files in this repository:</p>
-    <ul>
-        <li><a href="README.md" target="_blank">README.md</a></li>
-        <li><a href="navbar-button-style.css" target="_blank">navbar-button-style.css</a></li>
-        <li><a href="navbar-dropdown-style.css" target="_blank">navbar-dropdown-style.css</a></li>
-        <li><a href="navbar-button.html" target="_blank">navbar-button.html</a></li>
-    </ul>
+    <header>
+        <h1>BBCDP WP Customizations</h1>
+    </header>
+    <main>
+        <p>Welcome! Explore the repository files below:</p>
+        <div class="file-list">
+            <div class="file-card">
+                <span>README</span>
+                <a href="README.md" target="_blank">Open File</a>
+            </div>
+            <div class="file-card">
+                <span>Navbar Button Style</span>
+                <a href="navbar-button-style.css" target="_blank">Open File</a>
+            </div>
+            <div class="file-card">
+                <span>Navbar Dropdown Style</span>
+                <a href="navbar-dropdown-style.css" target="_blank">Open File</a>
+            </div>
+            <div class="file-card">
+                <span>Navbar Button Example</span>
+                <a href="navbar-button.html" target="_blank">Open File</a>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
