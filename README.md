@@ -23,7 +23,7 @@ Custom WordPress code snippets for BBCDP site improvements.
 
 ---
 
-### 4. WordPress Theme Files (Page-Specific)
+### 4. WordPress (Page-Specific)
 - facebook-video.html (page_id 1029)
 
 ---
