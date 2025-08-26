@@ -1,0 +1,13 @@
+/*
+  Video/Image Margin Spacing
+  Page Title: NA
+  WordPress Page URL (admin view): NA
+  Issue: 0002
+*/
+
+/* Ensure consistent spacing after videos and images */
+.responsive-video,
+.entry-content img {
+    display: block;       /* so margin works properly */
+    margin-bottom: 2.0rem;  /* adjust this to match paragraph-to-heading spacing */
+}
