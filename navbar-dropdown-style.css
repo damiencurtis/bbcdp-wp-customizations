@@ -1,3 +1,10 @@
+/*
+  Navbar Dropdown Style
+  Page Title: NA
+  WordPress Page URL (admin view): NA
+  Issue: 0003
+*/
+
 /* Ensure parent container does not shift layout */
 .wp-block-navigation__container .wp-block-navigation-item.has-child {
     position: relative;
