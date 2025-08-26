@@ -5,7 +5,7 @@ Custom WordPress code snippets for BBCDP site improvements.
 ---
 
 ## Code Locations
-- \* denotes files included for reference; these WP files were not authored as part of this project but work alongside the project’s code.
+Note: An asterisk (*) denotes files included for reference; these WordPress files were not authored as part of this project but are used alongside the project’s code.
 
 ### 1. Dashboard > Appearance > Additional CSS
 - facebook-video.css  
