@@ -14,6 +14,7 @@ Note: An asterisk (*) denotes files included for reference; these WordPress file
 ---
 
 ### 2. WPCode Plugin
+- footer-year.js
 - navbar-button-style.css  
 - navbar-dropdown-style.css
 
